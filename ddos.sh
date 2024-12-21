@@ -47,7 +47,7 @@ function DDOS_SERVER() {
 }
 
 # Graceful Exit
-trap "echo -e '${RED}Script Interrupted. Exiting...${NE}'; exit 0" SIGINT
+trap "echo -e '${RED}Script Interrupted. Exiting...${NE}'; exit 1" SIGINT
 
 # Main function
 main() {
